@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
               <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-white">г. Батуми, ул. Мамия Варшанидзе 154</p>
-                <p className="text-slate-400">Бокс 4 (СТО SellPoint Batumi)</p>
+                <p className="text-slate-400">Бокс 4 (СТО CheckPoint)</p>
               </div>
             </a>
 
