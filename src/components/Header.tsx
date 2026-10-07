@@ -16,10 +16,7 @@ export const Header: React.FC = () => {
           <div className="flex flex-col">
             <a href="/" className="flex items-center gap-2 group">
               <span className="text-2xl font-black tracking-tight text-white group-hover:text-amber-400 transition-colors">
-                AUTOBUY<span className="text-amber-500">.GE</span>
-              </span>
-              <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded">
-                Батуми
+                CarEx<span className="text-amber-500"> Batumi</span>
               </span>
             </a>
             <span className="text-xs text-slate-400 font-medium hidden md:block">

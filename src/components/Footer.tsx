@@ -16,10 +16,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl font-black text-white">
-                AUTOBUY<span className="text-amber-500">.GE</span>
-              </span>
-              <span className="text-xs font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
-                Батуми
+                CarEx<span className="text-amber-500"> Batumi</span>
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed mb-4">
@@ -92,7 +89,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 AUTOBUY BATUMI. Все права защищены.</p>
+          <p>© 2026 CarEx Batumi. Все права защищены.</p>
           <p>Срочный выкуп автомобилей в Батуми и по всей Аджарии.</p>
         </div>
       </div>

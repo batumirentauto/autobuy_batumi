@@ -271,7 +271,7 @@ export default function HomePage() {
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
                     <div>
                       <span className="text-xs font-semibold text-amber-400">Локация осмотра</span>
-                      <h3 className="text-lg font-bold text-white">СТО AUTOBUY & Adjara Detailing</h3>
+                      <h3 className="text-lg font-bold text-white">СТО CarEx & Adjara Detailing</h3>
                     </div>
                     <span className="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-semibold">
                       Бокс 4
