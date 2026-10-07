@@ -73,10 +73,10 @@ export const Header: React.FC = () => {
 
             <a
               href={`tel:${phone.replace(/\s+/g, '')}`}
-              className="flex items-center gap-2 px-3 py-2 text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition-colors"
+              className="flex items-center gap-1.5 px-2.5 py-2 text-[11px] font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg whitespace-nowrap transition-colors shrink-0"
             >
-              <Phone className="w-3.5 h-3.5 text-amber-400" />
-              <span className="hidden md:inline">{phone}</span>
+              <Phone className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span className="hidden md:inline whitespace-nowrap">{phone}</span>
             </a>
           </div>
         </div>
