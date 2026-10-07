@@ -2,11 +2,13 @@
 
 import React from 'react'
 import { MapPin, Phone, MessageSquare, Send, Clock, ShieldCheck } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
 
 export const Footer: React.FC = () => {
-  const phone = process.env.NEXT_PUBLIC_PHONE || '+995 591 050 752'
-  const wa = process.env.NEXT_PUBLIC_WHATSAPP || '995591050752'
-  const tg = process.env.NEXT_PUBLIC_TELEGRAM || 'rentcarvasilii'
+  const { t } = useLanguage()
+  const phone = process.env.NEXT_PUBLIC_PHONE || '+995 558 140 677'
+  const wa = process.env.NEXT_PUBLIC_WHATSAPP || '995558140677'
+  const tg = process.env.NEXT_PUBLIC_TELEGRAM || 'ppl93'
 
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-400 text-sm pb-20 sm:pb-12 pt-16">
@@ -20,17 +22,17 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed mb-4">
-              Специализированный центр экспресс-выкупа автомобилей в Батуми с собственным диагностическим автосервисом. Юридическая чистота, закрытие банковских залогов и моментальный расчет в кассе.
+              {t.footer.about}
             </p>
             <div className="flex items-center gap-2 text-xs text-emerald-400">
               <ShieldCheck className="w-4 h-4" />
-              <span>Официальное оформление в Service Agency MIA</span>
+              <span>{t.footer.officialDeal}</span>
             </div>
           </div>
 
           {/* Col 2 */}
           <div className="space-y-3">
-            <h4 className="text-white font-bold text-sm uppercase tracking-wider">Контакты и адрес СТО</h4>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider">{t.footer.contactsTitle}</h4>
             
             <a
               href="https://maps.app.goo.gl/paKrzJftPzEZDA1G7"
@@ -41,13 +43,13 @@ export const Footer: React.FC = () => {
               <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-white">г. Батуми, ул. Мамия Варшанидзе 154</p>
-                <p className="text-slate-400">Бокс 4 (СТО CheckPoint)</p>
+                <p className="text-slate-400">{t.footer.boxText}</p>
               </div>
             </a>
 
             <div className="flex items-center gap-2.5 text-xs text-slate-300">
               <Clock className="w-4 h-4 text-amber-500 shrink-0" />
-              <span>СТО: Пн–Вс с 10:00 до 19:00 (Оценка в мессенджерах)</span>
+              <span>{t.footer.hoursText}</span>
             </div>
 
             <div className="flex items-center gap-2.5 text-xs text-slate-300">
@@ -60,13 +62,13 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Quick Messengers */}
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-3">Связь с оценщиком</h4>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-3">{t.footer.contactMaster}</h4>
             <p className="text-xs text-slate-400 mb-4">
-              Отправьте фото машины и техпаспорта в мессенджер — мастер пришлет вилку цен через 10 минут.
+              {t.footer.masterNote}
             </p>
             <div className="flex flex-col sm:flex-row gap-2.5">
               <a
-                href={`https://wa.me/${wa}?text=${encodeURIComponent('Здравствуйте! Хочу оценить автомобиль в Батуми.')}`}
+                href={`https://wa.me/${wa}?text=${encodeURIComponent(t.quiz.waPreFill)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600 hover:text-white text-xs font-semibold transition-all"
@@ -76,7 +78,7 @@ export const Footer: React.FC = () => {
               </a>
 
               <a
-                href={`https://t.me/${tg}?text=${encodeURIComponent('Здравствуйте! Хочу оценить автомобиль в Батуми.')}`}
+                href={`https://t.me/${tg}?text=${encodeURIComponent(t.quiz.waPreFill)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-sky-600/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500 hover:text-white text-xs font-semibold transition-all"
@@ -89,8 +91,8 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 SellPoint BATUMI. Все права защищены.</p>
-          <p>Срочный выкуп автомобилей в Батуми.</p>
+          <p>{t.footer.rights}</p>
+          <p>{t.footer.cityService}</p>
         </div>
       </div>
     </footer>

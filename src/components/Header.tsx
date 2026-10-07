@@ -2,11 +2,14 @@
 
 import React from 'react'
 import { MapPin, Phone, MessageSquare, Send } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export const Header: React.FC = () => {
-  const phone = process.env.NEXT_PUBLIC_PHONE || '+995 591 050 752'
-  const wa = process.env.NEXT_PUBLIC_WHATSAPP || '995591050752'
-  const tg = process.env.NEXT_PUBLIC_TELEGRAM || 'rentcarvasilii'
+  const { t } = useLanguage()
+  const phone = process.env.NEXT_PUBLIC_PHONE || '+995 558 140 677'
+  const wa = process.env.NEXT_PUBLIC_WHATSAPP || '995558140677'
+  const tg = process.env.NEXT_PUBLIC_TELEGRAM || 'ppl93'
 
   return (
     <header className="sticky top-0 z-50 glass-panel border-b border-slate-800/80">
@@ -20,7 +23,7 @@ export const Header: React.FC = () => {
               </span>
             </a>
             <span className="text-xs text-slate-400 font-medium hidden md:block">
-              Срочный автовыкуп со своим СТО
+              {t.header.descriptor}
             </span>
           </div>
 
@@ -31,7 +34,7 @@ export const Header: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <span className="text-emerald-400 font-medium">Оценка онлайн 10:00 – 19:00</span>
+              <span className="text-emerald-400 font-medium">{t.header.onlineStatus}</span>
             </div>
             <a
               href="https://maps.app.goo.gl/paKrzJftPzEZDA1G7"
@@ -40,27 +43,29 @@ export const Header: React.FC = () => {
               className="flex items-center gap-1.5 text-slate-400 hover:text-amber-400 transition-colors"
             >
               <MapPin className="w-3.5 h-3.5 text-amber-500" />
-              <span>ул. Мамия Варшанидзе 154 (Бокс СТО)</span>
+              <span>{t.header.boxAddress}</span>
             </a>
           </div>
 
-          {/* Quick CTA Actions */}
+          {/* Language Switcher & Quick Actions */}
           <div className="flex items-center gap-2 sm:gap-3">
+            <LanguageSwitcher />
+
             <a
-              href={`https://wa.me/${wa}?text=${encodeURIComponent('Здравствуйте! Хочу узнать стоимость выкупа авто в Батуми.')}`}
+              href={`https://wa.me/${wa}?text=${encodeURIComponent(t.quiz.waPreFill)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-lg bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600 hover:text-white transition-all"
+              className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600 hover:text-white transition-all"
             >
               <MessageSquare className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">WhatsApp</span>
             </a>
 
             <a
-              href={`https://t.me/${tg}?text=${encodeURIComponent('Здравствуйте! Хочу узнать стоимость выкупа авто в Батуми.')}`}
+              href={`https://t.me/${tg}?text=${encodeURIComponent(t.quiz.waPreFill)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-lg bg-sky-600/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500 hover:text-white transition-all"
+              className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-sky-600/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500 hover:text-white transition-all"
             >
               <Send className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Telegram</span>
