@@ -1,0 +1,9 @@
+[variables]
+COREPACK_ENABLE_DOWNLOAD_PROMPT = "0"
+NIXPACKS_NODE_PACKAGE_MANAGER = "npm"
+
+[phases.install]
+cmds = ["npm install --legacy-peer-deps"]
+
+[phases.build]
+cmds = ["npm run build"]
