@@ -39,7 +39,7 @@ export default function HomePage() {
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
                   <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-                  Батуми и вся Аджария • Выкуп авто день в день
+                  Батуми • Выкуп авто день в день
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.15]">
@@ -271,7 +271,7 @@ export default function HomePage() {
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
                     <div>
                       <span className="text-xs font-semibold text-amber-400">Локация осмотра</span>
-                      <h3 className="text-lg font-bold text-white">СТО SellPoint & Adjara Detailing</h3>
+                      <h3 className="text-lg font-bold text-white">СТО SellPoint Batumi</h3>
                     </div>
                     <span className="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-semibold">
                       Бокс 4

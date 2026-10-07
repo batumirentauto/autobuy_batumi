@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
               <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-white">г. Батуми, ул. Мамия Варшанидзе 154</p>
-                <p className="text-slate-400">Бокс 4 (СТО Autobuy / Adjara Detailing)</p>
+                <p className="text-slate-400">Бокс 4 (СТО SellPoint Batumi)</p>
               </div>
             </a>
 
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
 
         <div className="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© 2026 SellPoint BATUMI. Все права защищены.</p>
-          <p>Срочный выкуп автомобилей в Батуми и по всей Аджарии.</p>
+          <p>Срочный выкуп автомобилей в Батуми.</p>
         </div>
       </div>
     </footer>
