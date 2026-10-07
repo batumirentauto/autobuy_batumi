@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl font-black text-white">
-                CarEx<span className="text-amber-500"> Batumi</span>
+                SellPoint<span className="text-amber-500"> BATUMI</span>
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed mb-4">
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 CarEx Batumi. Все права защищены.</p>
+          <p>© 2026 SellPoint BATUMI. Все права защищены.</p>
           <p>Срочный выкуп автомобилей в Батуми и по всей Аджарии.</p>
         </div>
       </div>
