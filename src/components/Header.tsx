@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <span className="text-emerald-400 font-medium">Оценка онлайн 09:00 – 21:00</span>
+              <span className="text-emerald-400 font-medium">Оценка онлайн 10:00 – 19:00</span>
             </div>
             <a
               href="https://maps.app.goo.gl/paKrzJftPzEZDA1G7"

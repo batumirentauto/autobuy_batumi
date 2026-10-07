@@ -283,7 +283,7 @@ export default function HomePage() {
                       📍 <strong className="text-white">Адрес:</strong> г. Батуми, ул. Мамия Варшанидзе 154 (напротив здания Apolo)
                     </p>
                     <p className="leading-relaxed">
-                      ⏱ <strong className="text-white">Время работы:</strong> с 09:00 до 20:00 ежедневно без перерывов
+                      ⏱ <strong className="text-white">Время работы:</strong> с 10:00 до 19:00 ежедневно без перерывов
                     </p>
                     <p className="leading-relaxed">
                       ☕ <strong className="text-white">Для клиентов:</strong> чистая зона ожидания, кофе, Wi-Fi и счетная машинка для купюр

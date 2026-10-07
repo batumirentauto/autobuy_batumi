@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-2.5 text-xs text-slate-300">
               <Clock className="w-4 h-4 text-amber-500 shrink-0" />
-              <span>СТО: Пн–Вс с 09:00 до 20:00 (Оценка в мессенджерах до 21:00)</span>
+              <span>СТО: Пн–Вс с 10:00 до 19:00 (Оценка в мессенджерах)</span>
             </div>
 
             <div className="flex items-center gap-2.5 text-xs text-slate-300">
