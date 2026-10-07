@@ -1,5 +1,6 @@
 import { postgresAdapter } from '@payloadcms/db-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import sharp from 'sharp'
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
@@ -21,12 +22,13 @@ export default buildConfig({
   collections: [Users, Leads, Deals],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || 'autobuy-batumi-secret-fallback-token-key-2026',
+  sharp,
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URL || 'postgresql://postgres:postgres@127.0.0.1:5432/autobuy_batumi',
+      connectionString: process.env.DATABASE_URL || '',
     },
   }),
 })
