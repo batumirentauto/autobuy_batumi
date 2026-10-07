@@ -67,7 +67,7 @@ ${desiredPrice ? `Ориентир по цене: $${desiredPrice}` : ''}
               onChange={(e) => setYear(e.target.value)}
               className="w-full px-3 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors"
             >
-              {Array.from({ length: 22 }, (_, i) => 2025 - i).map((y) => (
+              {Array.from({ length: 12 }, (_, i) => 2026 - i).map((y) => (
                 <option key={y} value={y} className="bg-slate-900 text-white">
                   {y} г.
                 </option>
